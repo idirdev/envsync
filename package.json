@@ -1,0 +1,22 @@
+{
+  "name": "@idirdev/envsync",
+  "version": "1.0.0",
+  "description": "Compare and sync .env files to find missing variables",
+  "main": "src/index.js",
+  "author": "idirdev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idirdev/envsync.git"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "bin": {
+    "envsync": "bin/cli.js"
+  }
+}
