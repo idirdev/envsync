@@ -127,3 +127,38 @@ npm run dev -- compare .env.example .env
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+EnvSync est un outil CLI pour comparer, valider, fusionner et générer des fichiers de variables d'environnement. Il vous permet de maintenir vos fichiers `.env` synchronisés entre les différents environnements en toute sécurité, en masquant les valeurs sensibles dans les sorties par défaut.
+
+### Installation
+```bash
+npm install -g @idirdev/envsync
+```
+
+Ou via npx sans installation :
+
+```bash
+npx @idirdev/envsync compare .env .env.production
+```
+
+### Utilisation
+```bash
+# Comparer deux fichiers d'environnement
+envsync compare .env .env.production
+
+# Valider par rapport à un template
+envsync validate .env .env.template
+
+# Fusionner deux fichiers
+envsync merge .env .env.local -o .env.merged
+
+# Générer depuis un template
+envsync generate .env.template -o .env
+```
+
+Consultez la section **Commands** ci-dessus pour la liste complète des options disponibles.
