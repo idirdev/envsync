@@ -162,3 +162,4 @@ envsync generate .env.template -o .env
 ```
 
 Consultez la section **Commands** ci-dessus pour la liste complète des options disponibles.
+
