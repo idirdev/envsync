@@ -1,0 +1,32 @@
+{
+  "name": "@idirdev/envsync",
+  "version": "1.0.0",
+  "description": "Environment variable sync and management CLI tool",
+  "author": "idirdev",
+  "license": "MIT",
+  "bin": {
+    "envsync": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  },
+  "keywords": ["env", "environment", "sync", "dotenv", "cli", "configuration"],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
