@@ -18,5 +18,9 @@
   },
   "bin": {
     "envsync": "bin/cli.js"
+  },
+  "homepage": "https://github.com/idirdev/envsync",
+  "bugs": {
+    "url": "https://github.com/idirdev/envsync/issues"
   }
 }
